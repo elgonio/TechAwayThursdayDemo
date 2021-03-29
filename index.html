@@ -10,15 +10,17 @@ layout: default
     <label>Query :</label>
     <input type="text" id="queryInput" name="queryInput">
     <button id='button'>Click Me!</button>
+    
+    <!-- scripts -->
+    <script src="bundle.js"></script>
+    <script>
+        const btn = document.getElementById('button');
+
+        btn.addEventListener('click', function () {
+            const query = document.getElementById('queryInput').value;
+            console.log(query);
+        });
+    </script>
 </body>
 
-<!-- scripts -->
-<script src="bundle.js"></script>
-<script>
-    const btn = document.getElementById('button');
-    
-    btn.addEventListener('click', function () {
-        const query = document.getElementById('queryInput').value;
-        console.log(query);
-    });
-</script>
+
